@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruda:wght@400;600;700&display=swap');
+
+:root {
+  font-family: 'Ruda', 'Segoe UI', sans-serif;
+  color: var(--color-ink);
+  background: var(--color-page);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-page: #fff9f4;
+  --color-surface: #fffdfb;
+  --color-ink: #003947;
+  --color-secondary: #005f73;
+  --color-action: #ee9b01;
+  --color-diagnostic: #efe5f4;
+  --color-diagnostic-ink: #5d4a66;
+  --color-loading: #099396;
+  --color-rule: #3f5a62;
+  --color-muted-rule: rgb(63 90 98 / 34%);
+  --color-focus: #006c77;
+  --color-focus-glow: rgb(0 108 119 / 28%);
+  --color-action-hover: #f7b42f;
+  --color-selection: #f7cb74;
+  --color-placeholder: #52717a;
+  --color-search-inset: rgb(0 57 71 / 5%);
+  --color-secondary-wash: rgb(0 95 115 / 8%);
+  --color-spinner-track: rgb(9 147 150 / 25%);
+  --font-ui: 'Ruda', 'Segoe UI', sans-serif;
+  --radius-card: 12px;
+  --radius-control: 12px;
+  --radius-chip: 8px;
+  --focus-ring: 0 0 0 3px var(--color-focus-glow);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+button:disabled {
+  cursor: progress;
+}
+
+::selection {
+  color: var(--color-ink);
+  background: var(--color-selection);
+}
+
+#root {
+  min-height: 100vh;
+}
